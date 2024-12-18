@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>❤</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <bord id="board">
+        <div class="bgp"></div>
+        <div class="mainpanel" style="visibility: visible;align-items: center;justify-content: center; display: grid;">
+            <p1 class="shake" id="time" style="text-align: center; position: relative;">00</p1>
+            <div class="a"></div>
+        </div>
+        <div class="mainpanel" style="visibility: hidden;">
+            <p1 class="shake" style="left: 62svw;top: 10svw;">если</p1>
+            <p1 class="shake" style="left: 48svw;top: 25svw;">хочешь</p1>
+            <p1 class="shake" style="left: 45svw;top: 41svw;">плАкАть</p1>
+            <p1 class="shake" style="left: 6svw;top: 55svw;">то</p1>
+            <p1 class="shake" style="left: 25svw;top: 58svw;">я</p1> 
+            <p1 class="shake" style="left: 40svw;top: 57svw;">буду</p1>
+            <p1 class="shake" style="left: 14svw;top: 71svw;">пЛАкать</p1>
+            <p1 class="shake" style="left: 55svw;top: 68svw;">тоже</p1>
+            <img class="img" src="./src/IMG_0683.PNG" style="left: 3%;top: 6%;">
+            <div class="a"></div>
+        </div>
+        <div class="mainpanel" style="visibility: hidden;">
+            <p1 class="shake" style="left: 10svw;top: 9svw;">Я</p1>
+            <p1 class="shake" style="left: 20svw;top: 13svw;">надену</p1>
+            <p1 class="shake" style="left: 50svw;top: 17svw;">платье</p1>
+            <p1 class="shake" style="left: 6svw;top: 29svw;">буду</p1>
+            <p1 class="shake" style="left: 32svw;top: 39svw;">на</p1>
+            <p1 class="shake" style="left: 10svw;top: 49svw;">тебя</p1>
+            <p1 class="shake" style="left: 6svw;top: 65svw;">похож</p1>
+            <p1 class="shake" style="left: 40svw;top: 70svw;">—и</p1>
+            <img class="img" src="./src/IMG_0000.PNG" style="left: 42svw; top: 28svw;">
+            <div class="a"></div>
+        </div>
+        <div class="mainpanel" style="visibility: hidden;">
+            <p1 class="shake" style="left: 10svw;top: 9svw;">можешь</p1>
+            <p1 class="shake" style="left: 25svw;top: 22svw;">не</p1>
+            <p1 class="shake" style="left: 10svw;top: 37svw;">смотреть</p1>
+            <p1 class="shake" style="left: 8svw;top: 49svw;">и</p1>
+            <p1 class="shake" style="left: 18svw;top: 52svw;">называть</p1>
+            <p1 class="shake" style="left: 62svw;top: 55svw;">меня</p1>
+            <p1 class="shake" style="left: 13svw;top: 65svw;">как</p1>
+            <p1 class="shake" style="left: 40svw;top: 70svw;">хочешь</p1>
+            <img class="img" src="./src/IMG_1128.PNG" style="left: 42svw; top: 5svw;">
+            <div class="a"></div>
+        </div>
+        <div class="mainpanel" style="visibility: hidden;">
+            <p1 class="shake" style="left: 20svw;top: 15svw;">все</p1>
+            <p1 class="shake" style="left: 45svw;top: 15svw;">вокруг</p1>
+            <p1 class="shake" style="left: 6svw;top: 42svw;font-size: 7svw;">тупое</p1>
+            <p1 class="shake" style="left: 53svw;top: 42svw;font-size: 7svw;">поэтому</p1>
+            <p1 class="shake" style="left: 22svw;top: 68svw;">я</p1>
+            <p1 class="shake" style="left: 31svw;top: 68svw;">с</p1>
+            <p1 class="shake" style="left: 39svw;top: 68svw;">тобою</p1>
+            <img class="img" src="./src/IMG_0001.PNG" style="left: 18svw; top: 25svw;">
+            <div class="a"></div>
+        </div>
+        <div class="mainpanel" id="lastpage" style="visibility: hidden; align-items: center; justify-content: center; display: flex;">
+            <img class="shake" src="./src/❤.png" style="top: 3svw; position: relative; width: 20svw;">
+            <div class="a"></div>
+        </div>
+        <script>
+            var board = document.getElementById("board");
+            // slideVisible();
+            board.onclick = function() {
+                slide();
+            }
+            shake();
+        </script>
+    </bord>
+
+    <div class="BG" id="container">
+        <script>
+            start();
+        </script>
+    </div>
+
+    <video id="video" loop="loop" preload="metadata">
+        <source  src="./src/audio.mp3" type="audio/mp3">
+        <script>
+            var audio = document.getElementById('video');
+            audio.volume = 0.3;
+            timer();
+        </script>
+    </video>
+
+
+
+</body>
+
+</html>

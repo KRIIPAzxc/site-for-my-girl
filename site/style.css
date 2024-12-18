@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#hideAll {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    z-index: 99;
+    /* Higher than anything else in the document */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 7.9svw;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root {
+    --animation-time: 2s;
+    --animation-delay: 0.1s;
+    --color: #000;
+}
+
+bord {
+    max-width: 100svw;
+    height: 100svh;
+    /* padding: 7vh;
+    padding-top: 12vh;
+    padding-bottom: 16vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 0, 0) -10%, rgba(0, 0, 0, 0.644) 50%, rgba(0, 0, 0, 0.623) 110%);
+}
+
+@font-face {
+    font-family: 'Phorssa';
+    src: url('./src/Phorssa.ttf');
+}
+
+.mainpanel {
+    position: absolute;
+    height: 88svw;
+    width: 88svw;
+    /* bottom: 34%; */
+    /* align-items: center;
+    justify-content: center; */
+    /*background-color: #ffffffc5;*/
+    z-index: 1;
+}
+
+.shake {
+    font-family: "Phorssa";
+    color: var(--color);
+    animation: shake var(--animation-time) ease-in-out var(--animation-delay) infinite forwards;
+}
+
+#lastpage img {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(15%) saturate(2164%) hue-rotate(264deg) brightness(92%) contrast(90%);
+}
+
+#emo {
+    font-family: "monospace";
+}
+
+p1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(24%) sepia(52%) brightness(76%);
+    -webkit-filter: grayscale(24%) sepia(52%) brightness(76%);
+    -moz-filter: grayscale(24%) sepia(52%) brightness(76%);
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(1deg);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    26% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    51% {
+        transform: rotate(1deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+    76% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+.img {
+    position: absolute;
+    width: 42svw;
+    filter: grayscale(24%) sepia(8%) brightness(85%);
+    -webkit-filter: grayscale(24%) sepia(8%) brightness(85%);
+    -moz-filter: grayscale(24%) sepia(8%) brightness(85%);
+}
+
+.BG {
+    position: absolute;
+    height: 100svh;
+    width: 100svw;
+    z-index: -1;
+    top: 0;
+}
+
+.BG img {
+    position: absolute;
+    width: 14%;
+    height: 7%;
+    top: 100%;
+    left: -1svw;
+    filter: blur(4px) brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(6266%) hue-rotate(325deg) brightness(100%) contrast(126%);
+}
+
+.a {
+    position: absolute;
+    height: 110svh;
+    width: 110svw;
+}
+
+.bgp {
+    width: 85svw;
+    height: 85svw;
+    filter: grayscale(34%) sepia(10%) brightness(80%);
+    -webkit-filter: grayscale(34%) sepia(10%) brightness(80%);
+    -moz-filter: grayscale(34%) sepia(10%) brightness(80%);
+    background-image: linear-gradient( rgb(0, 0, 0) -3%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0.0) 20%, rgba(0, 0, 0, 0.0) 80%, rgba(0, 0, 0, 0.1) 95%, rgb(0, 0, 0) 103%), linear-gradient(90deg, rgb(0, 0, 0) -3%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0.0) 20%, rgba(0, 0, 0, 0.0) 80%, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.1) 95%, rgb(0, 0, 0) 103%), url("./src/i.webp");
+}
